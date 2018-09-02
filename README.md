@@ -2,9 +2,9 @@
 ## React-Redux-SSR
 在React及Redux项目中进行服务端渲染（SSR: Server Side Rendering）
 
-使用redux-saga处理异步action，使用express处理页面渲染
+[redux-saga](https://github.com/redux-saga/redux-saga)处理异步action，使用[express](https://github.com/expressjs/express)处理页面渲染
 
-webpack监听编译文件，nodemon监听服务器文件变动
+[webpack](https://webpack.js.org/)监听编译文件，[nodemon](https://github.com/remy/nodemon)监听服务器文件变动
 
 
 本项目包含四个页面
@@ -20,7 +20,7 @@ webpack监听编译文件，nodemon监听服务器文件变动
 
 
 ## 使用
-1. `cd react-redux-ssr` 进入项目
+1. `cd react-redux-ssr-master` 进入项目
 2. `npm i` 安装依赖
 3. `npm run build` webpack编译文件
 4. `npm run server` 启动Node服务
