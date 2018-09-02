@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Message SSR</title>
+        <meta charset="utf-8">
+        <meta lang="zh-CN">
+
+        
+        <link rel="stylesheet" href="/public/static/dist/js/../css/messageClient.css?da00eeea">
+        
+    </head>
+    <body>
+        <div id="content">
+            <|- appHtml |>
+        </div>
+        <script id="preload-state">
+            var PRELOAD_STATE = <|- preloadState |>
+        </script>
+
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+
+        
+        <script src="/public/static/dist/js/messageClient.js?e3439b09"></script>
+        
+    </body>
+</html>

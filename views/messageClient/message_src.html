@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Message SSR</title>
+        <meta charset="utf-8">
+        <meta lang="zh-CN">
+
+        <% for(var key in htmlWebpackPlugin.files.css) { %>
+        <link rel="stylesheet" href="<%= htmlWebpackPlugin.files.css[key] %>">
+        <% } %>
+    </head>
+    <body>
+        <div id="content">
+            <|- appHtml |>
+        </div>
+        <script id="preload-state">
+            var PRELOAD_STATE = <|- preloadState |>
+        </script>
+
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+
+        <% for(var key in htmlWebpackPlugin.files.js) { %>
+        <script src="<%= htmlWebpackPlugin.files.js[key] %>"></script>
+        <% } %>
+    </body>
+</html>
