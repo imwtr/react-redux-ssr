@@ -68,7 +68,7 @@ module.exports = function(req, res, next) {
 
         res.render('messageClient/message.html', {
             appHtml: appHtml,
-            preloadState: JSON.stringify(preloadState).replace(/</g, '0x003c')
+            preloadState: JSON.stringify(preloadState).replace(/</g, '\\u003c')
         });
     }
 };
