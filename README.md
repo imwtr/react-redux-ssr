@@ -20,10 +20,10 @@
 
 
 ## 使用
-1. `cd react-redux-ssr-master` 进入项目
+1. `cd react-redux-ssr` 进入项目
 2. `npm i` 安装依赖
-3. `npm run build` webpack编译文件
-4. `npm run server` 启动Node服务
+3. `npm run build` webpack编译文件; unix系统使用  npm run build:unix
+4. `npm run server` 启动Node服务; unix系统使用  npm run server:unix
 5. 访问上述四个页面
 
 
