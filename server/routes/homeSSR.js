@@ -74,7 +74,7 @@ module.exports = function(req, res, next) {
 
         res.render('homeClient/home.html', {
             appHtml: appHtml,
-            preloadState: JSON.stringify(preloadState).replace(/</g, '0x003c')
+            preloadState: JSON.stringify(preloadState).replace(/</g, '\\u003c')
         });
     }
 }
